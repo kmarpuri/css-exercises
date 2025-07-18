@@ -16,26 +16,47 @@ body {
 }
 
 .modal {
+  position: relative;
   background: white;
-  width: 480px;
+  width: 90%;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
 }
 
 .icon {
   color: royalblue;
-  font-size: 26px;
+  font-size: 28px;
   font-weight: 700;
   background: lavender;
-  width: 42px;
-  height: 42px;
+  aspect-ratio: 1;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
+  margin-left: 16px;
+  margin-top: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  width: 100%;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
 .close-button {
+  position: absolute;
+  right: 16px;
+  cursor: pointer;
   background: #eee;
   border-radius: 50%;
   color: #888;
@@ -43,6 +64,7 @@ body {
   font-size: 16px;
   height: 24px;
   width: 24px;
+  aspect-ratio: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,6 +76,7 @@ button {
   cursor: pointer;
   padding: 8px 16px;
   border-radius: 8px;
+  margin-top: 16px;
 }
 
 button.continue {
